@@ -13,7 +13,7 @@
 #         return self.car_model
 from django.db import models
 
-
+# Aadhar Model creat
 class AadharModel(models.Model):
     aadhar_no=models.IntegerField()
     def __str__(self):
