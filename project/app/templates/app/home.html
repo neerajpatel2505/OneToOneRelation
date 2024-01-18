@@ -1,0 +1,18 @@
+<center>
+<h1>Add Aadhar Details</h1>
+<form action="{% url 'add' %}" method="post">
+    {% csrf_token %}
+    {{aadhar.as_p}}
+    <button type="submit">Add Aadhar</button>
+</form>
+
+<br>
+ 
+<h1>Add Person Detail</h1>
+<h3 style="color: brown;">{{msg}}</h3>
+<form action="{% url 'submit' %}" method="post">
+    {% csrf_token %}
+    {{student.as_p}}
+    <button type="submit">Add Stu_detail</button>
+</form>
+</center>
